@@ -412,7 +412,6 @@ nav a:hover::before {
 
 @media (min-width: 768px) {
   .Proteinas-info-section {
-  padding: 100%;
   }
   
   .Proteinas-info-section h2 {
