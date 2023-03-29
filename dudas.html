@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Esparta Gym</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>Dudas</title>
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+      var faqItems = document.querySelectorAll('.faq details');
+
+      faqItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          faqItems.forEach(function(other) {
+            if (other !== item) {
+              other.removeAttribute('open');
+            }
+          });
+        });
+      });
+    });
+		
+	</script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logogym.png" alt="Logo de la empresa">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proteinas index.html">Proteinas</a></li>
+          <li><a href="preentrenos index.html">Preentrenos</a></li>
+          <li><a href="equipamiento index.html">Equipamiento</a></li>
+          <li><a href="gym en casa index.html">Gym En Casa</a></li>
+          <li><a href="dudas.html">Dudas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="faq" class="faq">
+      <h2>Preguntas Frecuentes (FAQ)</h2>
+  
+      <details>
+        <summary>¿Cual es la diferencia entre la Proteina Whey y la Isolate (Isolada)?</summary>
+        <p>La diferencia es fundamentalmente el porcentaje de proteina que posee cada una, mientras que la proteina whey contiene entre 70-80 gramos de proteina por cada 100 gramos de producto, la isolada contiene entre 85-99, eso es lo que hace que la proteina isolada sea algo mas cara.</p>
+      </details>
+  
+      <details>
+        <summary>¿Que es un Mass Gainer?</summary>
+        <p>Los mass gainer son productos de una alta densidad calorica creado fundamentalmente para la ganancia de peso, su base suelen ser los carbohidratos y las proteinas.</p>
+      </details>
+  
+      <details>
+        <summary>¿Preentreno o Cafeina?</summary>
+        <p>Mientras que los preentrenos suelen llevar muchos productos para que el entrenamiento sea mas eficiente, la cafeina pura es eso, cafeina. Mucha gente dice que realmente lo unico que vale la pena de los preentrenos en la cantidad de cafeina que lleven, ademas de que la cafeina pura es sensiblemente mas barata.</p>
+      </details>
+  
+      <details>
+        <summary>¿Es rentable un gimnasio en casa?</summary>
+        <p>A corto plazo no, suele requerir una inversion importante y ademas tener espacio para poder crearlo, pero a largo plazo los beneficios son increibles, acabaras amortizando la inversion inicial y ademas ganaras en comodidad y flexibilidad.</p>
+      </details>
+  
+    </section>
+
+
+
+  </body>
